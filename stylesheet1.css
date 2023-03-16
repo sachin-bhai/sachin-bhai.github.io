@@ -4,12 +4,12 @@ header{
     font-size: 30px;
     height: 50px;
     width: auto;
-    background-color:aquamarine;
+    background-color:darkorange;
     align-self:center;
 }
 
 h2{
-    color: red;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 h1{
@@ -103,3 +103,16 @@ footer{
 
 }
 
+.sachin{
+    color:aliceblue;
+    text-align: center;
+    font-size: 30px ;
+    font-variant: small-caps;
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+
+img{
+    border-radius: 20px;
+}
