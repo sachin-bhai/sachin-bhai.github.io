@@ -1,0 +1,96 @@
+header{
+    text-align: center;
+    font: italic;
+    font-size: 30px;
+    height: 50px;
+    width: auto;
+    background-color:aquamarine;
+    align-self:center;
+}
+
+h2{
+    color: red;
+    text-align: center;
+}
+h1{
+    color: rgb(5, 0, 0);
+    text-align: center;
+}
+body {
+    background-color: dodgerblue;
+}
+section {
+    text-align: center;
+}
+footer{
+    color:aliceblue;
+    text-align: center;
+    font-size: 30px ;
+    font-variant: small-caps;
+    background-color: black;
+    width: auto;
+    height: 50px;
+}
+
+
+
+
+
+.prev{
+    align-self:auto;
+    border: 5px solid #072f9d;
+    font-size: 30px;
+    background-color: #DA0463;
+    width: 175px;
+}
+.prev:hover{
+    align-self:auto;
+    border: 5px solid #072f9d;
+    font-size: 27px;
+    background-color: #DA0463;
+    width: 170px
+
+}
+.home{
+    align-self:auto;
+    border: 5px solid #072f9d;
+    font-size: 35px;
+    font:bold;
+    background-color: #DA0463;
+    width: 150px;
+
+}
+.home:hover{
+    align-self:auto;
+    border: 5px solid #072f9d;
+    font-size: 32px;
+    background-color: #DA0463;
+    width: 145px
+}
+.next{
+    align-self:auto;
+    border: 5px solid #072f9d;
+    font-size: 30px;
+    background-color: #DA0463;
+    width: 175px;
+
+}
+.next:hover{
+    align-self:auto;
+    border: 5px solid #072f9d;
+    font-size: 27px;
+    background-color: #DA0463;
+    width: 175px;
+
+}
+
+.container{
+
+    width:auto;
+    height: 500px;
+    background-color: #ff6f61;
+    align-self: center;
+    align-content: center;
+
+}
+
