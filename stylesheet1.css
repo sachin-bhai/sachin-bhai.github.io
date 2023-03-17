@@ -116,3 +116,30 @@ footer{
 img{
     border-radius: 20px;
 }
+.author{
+    text-align:right;
+    font-size: 30px;
+}
+.date{
+    text-align:start;
+    font-size: large;
+}
+
+.mainauth{
+    text-align: end;
+    font-size: 20px;
+}
+a:hover{
+    color:crimson
+}
+.maincontainer{
+    width:auto;
+    height: auto;
+    background-color:rgba(242, 242, 235, 0.881);
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}
+.maincontainer:hover{
+    background-color: #DA0463;
+}
