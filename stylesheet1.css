@@ -1,11 +1,12 @@
 header{
     text-align: center;
-    font: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     height: 50px;
-    width: auto;
-    background-color:darkorange;
+    width: 1000px;
+    background-image: linear-gradient(to left,#C33764, #1D2671);
     align-self:center;
+    border-radius: 30px;
 }
 
 h2{
@@ -16,7 +17,10 @@ h1{
     color: rgb(5, 0, 0);
     text-align: center;
 }
-
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
 h4{
     background-color: rgb(238, 246, 20);
     border-radius: 20px;
@@ -28,17 +32,15 @@ section {
     text-align: center;
 }
 footer{
-    color:aliceblue;
+    background-image: linear-gradient(to right,#09203F , #537895);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    font-size: 30px ;
-    font-variant: small-caps;
-    background-color: black;
-    width: auto;
+    font-size: 30px;
     height: 50px;
+    right: 0px; bottom: 0px;
+    width: auto;
+    border-radius: 30px;
 }
-
-
-
 
 
 .prev{
@@ -100,6 +102,7 @@ footer{
     align-self: center;
     align-content: center;
     text-align: center;
+    padding: 20px;
 
 }
 
@@ -135,11 +138,36 @@ a:hover{
 .maincontainer{
     width:auto;
     height: auto;
-    background-color:rgba(242, 242, 235, 0.881);
+    background-image:linear-gradient(to right,#EE9CA7,#FFDDE1);
     align-self: center;
     align-content: center;
     text-align: center;
+    border-radius: 25px;
+    transition: all 3s ease-in-out 3s;
+
 }
-.maincontainer:hover{
-    background-color: #13db13;
+.hovering_text{
+    display: none;
+    border-radius: 25px;
+}
+.maincontainer:hover .hovering_text{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    display:block;
+    height:auto;
+
+}
+.mainbody{
+    background-image: linear-gradient(to right,#D4145A,#FBB03B);
+}
+
+body{
+    background-image: linear-gradient(to right,#A9F1DF,#FFBBBB);
+}
+
+/* .mega_container{
+    padding: 20px;
+} */
+
+.mega_container .maincontainer{
+    margin-bottom: 100px;
 }
