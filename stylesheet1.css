@@ -4,7 +4,6 @@ header{
     font-size: 30px;
     height: 50px;
     width: auto;
-    /* background-image: linear-gradient(to left,#C33764, #1D2671); */
     background-image: linear-gradient(to left, #00DBDE 0%, #FC00FF 100%);
 
     align-self:center;
@@ -39,7 +38,6 @@ footer{
     height: auto;
     width:auto;
     border-radius: 30px;
-    background-image: linear-gradient(to left, #00DBDE 0%, #FC00FF 100%);
 }
 
 
@@ -148,14 +146,15 @@ a:hover{
 }
 
 .hovering_text{
+    width:1830;
+    height: fit-content;
     background-image:linear-gradient(to right,#EE9CA7,#FFDDE1);
     display: none;
     border-radius: 25px;
     transition-delay: 5s;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:20px;
-
-
+    font-size:25px;
+    animation: fadeout;
 }
 
 
