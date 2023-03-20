@@ -3,8 +3,10 @@ header{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     height: 50px;
-    width: 1000px;
-    background-image: linear-gradient(to left,#C33764, #1D2671);
+    width: auto;
+    /* background-image: linear-gradient(to left,#C33764, #1D2671); */
+    background-image: linear-gradient(to left, #00DBDE 0%, #FC00FF 100%);
+
     align-self:center;
     border-radius: 30px;
 }
@@ -25,9 +27,7 @@ h4{
     background-color: rgb(238, 246, 20);
     border-radius: 20px;
 }
-body {
-    background-color:#072f9d;
-}
+
 section {
     text-align: center;
 }
@@ -36,10 +36,10 @@ footer{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: 30px;
-    height: 50px;
-    right: 0px; bottom: 0px;
-    width: auto;
+    height: auto;
+    width:auto;
     border-radius: 30px;
+    background-image: linear-gradient(to left, #00DBDE 0%, #FC00FF 100%);
 }
 
 
@@ -98,7 +98,6 @@ footer{
 
     width:auto;
     height: auto;
-    background-color:rgba(242, 242, 235, 0.881);
     align-self: center;
     align-content: center;
     text-align: center;
@@ -135,39 +134,67 @@ img{
 a:hover{
     color:crimson
 }
+
+
 .maincontainer{
     width:auto;
     height: auto;
-    background-image:linear-gradient(to right,#EE9CA7,#FFDDE1);
+    background-image:linear-gradient(to right,);
     align-self: center;
     align-content: center;
     text-align: center;
     border-radius: 25px;
-    transition: all 3s ease-in-out 3s;
 
 }
+
 .hovering_text{
+    background-image:linear-gradient(to right,#EE9CA7,#FFDDE1);
     display: none;
     border-radius: 25px;
-}
-.maincontainer:hover .hovering_text{
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
-    display:block;
-    height:auto;
+    transition-delay: 5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+
 
 }
+
+
+.maincontainer:hover .hovering_text{
+    animation:fadeIn 2s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    display:block;
+
+}
+
 .mainbody{
     background-image: linear-gradient(to right,#D4145A,#FBB03B);
+    animation: fadeIn 2s;
 }
 
 body{
     background-image: linear-gradient(to right,#A9F1DF,#FFBBBB);
 }
 
-/* .mega_container{
-    padding: 20px;
-} */
-
 .mega_container .maincontainer{
-    margin-bottom: 100px;
+    margin-bottom: 175px;
 }
+
+article{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.fade_in{
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
