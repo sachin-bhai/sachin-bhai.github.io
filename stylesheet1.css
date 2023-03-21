@@ -120,11 +120,11 @@ img{
     border-radius: 20px;
 }
 .author{
-    text-align:right;
+    margin-left: 75%;
     font-size: 30px;
 }
 .date{
-    text-align:start;
+    margin-left: 75%;
     font-size: large;
 }
 
@@ -162,9 +162,7 @@ a:hover{
 
 .image{
     border-radius: 100%;
-    border-color: #00DBDE;
-    border:5px;
-    border-color: #FC00FF;
+    border: 10px solid #000000;
     margin-left: auto;
     margin-right: auto;
     height:175px;
@@ -204,6 +202,7 @@ article{
     position: absolute;
 }
 
+
 .fade_in{
     animation: fadeIn 3s;
 }
@@ -217,4 +216,5 @@ article{
     from { opacity: 1; }
     to   { opacity: 0; }
 }
+
 
