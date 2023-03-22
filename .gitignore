@@ -14,3 +14,80 @@ If you are already comfortable with HTML, CSS, and JavaScript, you can ask us fo
 
 Akshaj, [14/03/23 4:43 PM]
 We kindly request daily progress updates to keep track of your work, which should include a summary of what you have achieved and your plans for the next steps.
+
+
+
+.upvotes{
+    width:30px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    white-space: nowrap;
+}
+#upvote{
+    font-size: 25px;
+    border-radius: 100%;
+    border:3px solid red;
+    display:inline-flex;
+
+    
+}
+
+#upvote:hover{
+    color:rgb(216, 22, 11);
+    box-shadow: 0 5px 15px rgb(216, 22, 11);
+    
+}
+
+#downvote{
+    font-size: 25px;
+    border-radius: 100%;
+    border:3px solid rgba(24, 87, 222, 0.819);
+    display: inline-block;
+
+}
+
+#downvote:hover{
+    color: #135992ca;
+    box-shadow: 0 5px 15px rgba(24, 87, 222, 0.819);
+
+}
+
+#counter{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font: bold;
+    display: inline-block;
+    
+}
+var count = 419;
+var n=0;
+var m=0;
+var up = document.getElementById("upvote");
+var down = document.getElementById("downvote");
+var disp = document.getElementById("counter");
+    
+up.onclick = function () {
+    if(n==0){
+        count++;
+        n++;
+        if(m==1){
+            count++;
+        }
+        m=0
+    }
+    disp.innerHTML = count;
+}
+
+down.onclick=function(){
+    if(m==0){
+        count=count-1
+        m++;
+        if(n==1){
+            count=count-1;
+        }
+        n=0
+    }
+    disp.innerHTML=count;
+}
