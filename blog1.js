@@ -1,4 +1,3 @@
-
 document.getElementById("prev").addEventListener("click", function() {
     alert("No more articles written previously, return HOME instead?");
     window.location.href ="index.html";
