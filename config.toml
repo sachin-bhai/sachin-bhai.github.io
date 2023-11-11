@@ -1,0 +1,99 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "stellar"
+[outputFormats]
+[outputFormats.HTML]
+mediaType = "text/html"
+publishDir = "docs"
+
+[outputs]
+home = ["HTML"]
+[params]
+  [params.header]
+    title = "Portfolio"
+    description = 'This is the portfolio of [@SachinShreekumar](https://github.com/sachin-bhai)'
+    image = "images/sachin.jpg"
+
+  [[params.navigation]]
+    name = "Introduction"
+    href = "#intro"
+
+  [[params.navigation]]
+    name = "Stuff that I did"
+    href = "#first"
+
+  [[params.navigation]]
+    name = "Task Approach"
+    href = "#second"
+
+
+  [params.intro]
+    title = "About me"
+    description = "Hey there! I'm Sachin and I'm 19 years old and currently heading into the second year of my bachelors degree. I have an interest in AI and machine learning models and have done some research about them. My other interests include Flutter app development and I sometimes produce music."
+    image = "images/pic01.jpg"
+
+
+  [[params.section]]
+    id = "first"
+    description = "Something I've worked on"
+    
+    # the picture is stored at static/images/
+    [params.section.features]
+      enable = true
+      [[params.section.feature]]
+        title = "SKILL-EX"
+        description = "It was a app based on the concept of barter, where we 'trade' teaching someone a skill in return for their expertise."
+        icon = "fa-code"
+
+      
+    [params.section.footer]
+      enable = true
+      [[params.section.footer.action]]
+        buttontext = "Learn More"
+        buttonUrl = "generic.html"
+        
+  [[params.section]]
+    id = "second"
+    title = "How I approached this task"
+    description = "When I first read the task, I assumed there would be more programming. But most of the task was just installing Hugo dependencies and figuring out how to add the selected theme to the website folder. After that it was pretty easy as we just had to figure out what to fill the site with."
+
+
+
+
+
+
+
+
+  [params.footer]
+    enable = true
+
+
+    second_title = "Details"
+    address = "1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA"
+    email = "sachin.shreekumar@gmail.com"
+
+    [[params.footer.action]]
+      href = "generic.html"
+      buttontext = "Learn More"
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+      [[params.footer.social]]
+        title = "Twitter"
+        icon = "fa-twitter"
+        link = "https://twitter.com/sachinsleeps"
+
+      [[params.footer.social]]
+        title = "Instagramm"
+        icon = "fa-instagram"
+        link = "https://www.instagram.com/sachin_threekumar/"
+
+
+
+    # copyright
+    [params.footer.copyright]
+      enable = true
+      text = "© Untitled, Design: [HTML5UP](//html5up.net)"
